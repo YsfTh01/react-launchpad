@@ -72,7 +72,7 @@ Production-grade React boilerplate with feature-based architecture, designed for
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/boilerplate.git
+git clone https://github.com/Aybavs/react-launchpad.git
 cd boilerplate
 
 # Install dependencies
