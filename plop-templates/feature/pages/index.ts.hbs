@@ -1,0 +1,5 @@
+import { lazy } from 'react'
+
+export const {{pascalCase name}}Page = lazy(() =>
+  import('./{{pascalCase name}}Page').then((m) => ({ default: m.{{pascalCase name}}Page }))
+)

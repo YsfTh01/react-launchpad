@@ -1,0 +1,31 @@
+import { create } from 'zustand'
+
+interface {{pascalCase name}}State {
+  // Add your state properties here
+  selectedId: string | null
+  isModalOpen: boolean
+}
+
+interface {{pascalCase name}}Actions {
+  setSelectedId: (id: string | null) => void
+  openModal: () => void
+  closeModal: () => void
+  reset: () => void
+}
+
+type {{pascalCase name}}Store = {{pascalCase name}}State & {{pascalCase name}}Actions
+
+const initialState: {{pascalCase name}}State = {
+  selectedId: null,
+  isModalOpen: false,
+}
+
+// This store is internal to the feature - do not export from index.ts
+export const use{{pascalCase name}}Store = create<{{pascalCase name}}Store>((set) => ({
+  ...initialState,
+
+  setSelectedId: (id) => set({ selectedId: id }),
+  openModal: () => set({ isModalOpen: true }),
+  closeModal: () => set({ isModalOpen: false }),
+  reset: () => set(initialState),
+}))

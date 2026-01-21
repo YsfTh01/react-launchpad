@@ -1,0 +1,46 @@
+import { useMutation, useQueryClient } from '@tanstack/react-query'
+
+import { apiClient } from '@/core/api'
+
+import type { {{pascalCase name}} } from '../types'
+
+export function useCreate{{pascalCase name}}() {
+  const queryClient = useQueryClient()
+
+  return useMutation({
+    mutationFn: async (data: Partial<{{pascalCase name}}>) => {
+      const response = await apiClient.post<{{pascalCase name}}>('/{{dashCase name}}', data)
+      return response.data
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['{{dashCase name}}'] })
+    },
+  })
+}
+
+export function useUpdate{{pascalCase name}}() {
+  const queryClient = useQueryClient()
+
+  return useMutation({
+    mutationFn: async ({ id, data }: { id: string; data: Partial<{{pascalCase name}}> }) => {
+      const response = await apiClient.patch<{{pascalCase name}}>(`/{{dashCase name}}/${id}`, data)
+      return response.data
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['{{dashCase name}}'] })
+    },
+  })
+}
+
+export function useDelete{{pascalCase name}}() {
+  const queryClient = useQueryClient()
+
+  return useMutation({
+    mutationFn: async (id: string) => {
+      await apiClient.delete(`/{{dashCase name}}/${id}`)
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['{{dashCase name}}'] })
+    },
+  })
+}

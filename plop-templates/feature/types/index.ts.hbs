@@ -1,0 +1,20 @@
+export interface {{pascalCase name}} {
+  id: string
+  // Add your type properties here
+  createdAt: string
+  updatedAt: string
+}
+
+export interface {{pascalCase name}}Filters {
+  search?: string
+  page?: number
+  limit?: number
+}
+
+export interface {{pascalCase name}}Response {
+  data: {{pascalCase name}}[]
+  total: number
+  page: number
+  limit: number
+  totalPages: number
+}

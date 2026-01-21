@@ -1,0 +1,36 @@
+import { useQuery } from '@tanstack/react-query'
+
+import { apiClient } from '@/core/api'
+
+import type { {{pascalCase name}}, {{pascalCase name}}Filters, {{pascalCase name}}Response } from '../types'
+
+const {{camelCase name}}Keys = {
+  all: ['{{dashCase name}}'] as const,
+  lists: () => [...{{camelCase name}}Keys.all, 'list'] as const,
+  list: (filters: {{pascalCase name}}Filters) => [...{{camelCase name}}Keys.lists(), filters] as const,
+  details: () => [...{{camelCase name}}Keys.all, 'detail'] as const,
+  detail: (id: string) => [...{{camelCase name}}Keys.details(), id] as const,
+}
+
+export function use{{pascalCase name}}s(filters: {{pascalCase name}}Filters = {}) {
+  return useQuery({
+    queryKey: {{camelCase name}}Keys.list(filters),
+    queryFn: async () => {
+      const { data } = await apiClient.get<{{pascalCase name}}Response>('/{{dashCase name}}', {
+        params: filters,
+      })
+      return data
+    },
+  })
+}
+
+export function use{{pascalCase name}}(id: string) {
+  return useQuery({
+    queryKey: {{camelCase name}}Keys.detail(id),
+    queryFn: async () => {
+      const { data } = await apiClient.get<{{pascalCase name}}>(`/{{dashCase name}}/${id}`)
+      return data
+    },
+    enabled: !!id,
+  })
+}
