@@ -213,13 +213,6 @@ src/
 │   ├── users/              # Users management feature
 │   └── notifications/      # Notifications feature
 │
-├── shared/                 # Cross-cutting concerns
-│   ├── constants/          # App constants
-│   ├── hooks/              # Shared hooks
-│   ├── types/              # Global types
-│   ├── utils/              # Utility functions
-│   └── validation/         # Zod schemas
-│
 ├── config/                 # App configuration
 ├── i18n/                   # Internationalization
 ├── styles/                 # Global styles
@@ -416,27 +409,6 @@ This creates:
 4. Delete translation files
 5. Run `pnpm build` to verify
 
-## Changelog & Versioning
-
-This project uses [Changesets](https://github.com/changesets/changesets) for version management and changelog generation.
-
-```bash
-# Create a changeset for your changes
-pnpm changeset
-
-# Apply changesets and bump version
-pnpm version
-
-# Build and publish (if applicable)
-pnpm release
-```
-
-### Changeset Types
-
-- `major` - Breaking changes
-- `minor` - New features
-- `patch` - Bug fixes
-
 ## Git Workflow
 
 ### Commit Convention
@@ -475,7 +447,6 @@ VITE_APP_NAME=Boilerplate
 @/app/      → src/app/
 @/core/     → src/core/
 @/features/ → src/features/
-@/shared/   → src/shared/
 ```
 
 ## Testing
