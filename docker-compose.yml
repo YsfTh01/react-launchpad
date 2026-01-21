@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  # Production build
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '3000:80'
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+    networks:
+      - app-network
+
+  # Development mode
+  dev:
+    image: node:20-alpine
+    working_dir: /app
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - '5173:5173'
+    command: sh -c "corepack enable && corepack prepare pnpm@latest --activate && pnpm install && pnpm dev --host"
+    environment:
+      - NODE_ENV=development
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
