@@ -1,0 +1,42 @@
+{
+  "title": "Users",
+  "description": "Manage your team members and their permissions",
+  "addUser": "Add User",
+  "searchPlaceholder": "Search users...",
+  "roles": {
+    "admin": "Admin",
+    "moderator": "Moderator",
+    "user": "User"
+  },
+  "statuses": {
+    "active": "Active",
+    "inactive": "Inactive",
+    "pending": "Pending"
+  },
+  "table": {
+    "user": "User",
+    "role": "Role",
+    "status": "Status",
+    "created": "Created",
+    "actions": "Actions"
+  },
+  "actions": {
+    "view": "View",
+    "edit": "Edit",
+    "delete": "Delete"
+  },
+  "deleteConfirm": {
+    "title": "Delete User",
+    "description": "Are you sure you want to delete {{name}}? This action cannot be undone.",
+    "confirm": "Delete",
+    "cancel": "Cancel"
+  },
+  "messages": {
+    "deleteSuccess": "User deleted successfully",
+    "deleteError": "Failed to delete user",
+    "createSuccess": "User created successfully",
+    "createError": "Failed to create user",
+    "updateSuccess": "User updated successfully",
+    "updateError": "Failed to update user"
+  }
+}

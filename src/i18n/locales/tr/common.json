@@ -1,0 +1,37 @@
+{
+  "app": {
+    "name": "Boilerplate",
+    "loading": "Yükleniyor...",
+    "error": "Bir şeyler yanlış gitti"
+  },
+  "navigation": {
+    "home": "Ana Sayfa",
+    "dashboard": "Panel",
+    "users": "Kullanıcılar",
+    "settings": "Ayarlar",
+    "logout": "Çıkış Yap"
+  },
+  "actions": {
+    "submit": "Gönder",
+    "cancel": "İptal",
+    "save": "Kaydet",
+    "delete": "Sil",
+    "edit": "Düzenle",
+    "create": "Oluştur",
+    "back": "Geri",
+    "next": "İleri",
+    "confirm": "Onayla"
+  },
+  "validation": {
+    "required": "Bu alan zorunludur",
+    "email": "Geçerli bir e-posta adresi giriniz",
+    "minLength": "En az {{count}} karakter olmalıdır",
+    "maxLength": "En fazla {{count}} karakter olmalıdır"
+  },
+  "errors": {
+    "generic": "Bir hata oluştu",
+    "network": "Ağ hatası. Lütfen tekrar deneyin.",
+    "unauthorized": "Yetkiniz bulunmamaktadır",
+    "notFound": "Bulunamadı"
+  }
+}

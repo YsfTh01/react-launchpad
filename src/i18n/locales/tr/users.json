@@ -1,0 +1,42 @@
+{
+  "title": "Kullanıcılar",
+  "description": "Ekip üyelerinizi ve izinlerini yönetin",
+  "addUser": "Kullanıcı Ekle",
+  "searchPlaceholder": "Kullanıcı ara...",
+  "roles": {
+    "admin": "Yönetici",
+    "moderator": "Moderatör",
+    "user": "Kullanıcı"
+  },
+  "statuses": {
+    "active": "Aktif",
+    "inactive": "Pasif",
+    "pending": "Beklemede"
+  },
+  "table": {
+    "user": "Kullanıcı",
+    "role": "Rol",
+    "status": "Durum",
+    "created": "Oluşturulma",
+    "actions": "İşlemler"
+  },
+  "actions": {
+    "view": "Görüntüle",
+    "edit": "Düzenle",
+    "delete": "Sil"
+  },
+  "deleteConfirm": {
+    "title": "Kullanıcıyı Sil",
+    "description": "{{name}} kullanıcısını silmek istediğinizden emin misiniz? Bu işlem geri alınamaz.",
+    "confirm": "Sil",
+    "cancel": "İptal"
+  },
+  "messages": {
+    "deleteSuccess": "Kullanıcı başarıyla silindi",
+    "deleteError": "Kullanıcı silinemedi",
+    "createSuccess": "Kullanıcı başarıyla oluşturuldu",
+    "createError": "Kullanıcı oluşturulamadı",
+    "updateSuccess": "Kullanıcı başarıyla güncellendi",
+    "updateError": "Kullanıcı güncellenemedi"
+  }
+}
